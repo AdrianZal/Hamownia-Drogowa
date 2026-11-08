@@ -1,0 +1,11 @@
+<api type="release" assembly-name="Plugin.BLE" mvid="75d3283046684dbe8ee79fa3e743eccc">
+  <module assembly-name="Plugin.BLE" mvid="75d3283046684dbe8ee79fa3e743eccc" mvid-bytes="MCjTdWhGvk2O55+j50PszA==">
+    <types-scratch>
+      <entry key="crc64087678da79fdfe22/BluetoothStatusBroadcastReceiver" java-name="crc64087678da79fdfe22/BluetoothStatusBroadcastReceiver" managed-type-name="Plugin.BLE.BroadcastReceivers.BluetoothStatusBroadcastReceiver" token="33554444" />
+      <entry key="crc64087678da79fdfe22/BondStatusBroadcastReceiver" java-name="crc64087678da79fdfe22/BondStatusBroadcastReceiver" managed-type-name="Plugin.BLE.BroadcastReceivers.BondStatusBroadcastReceiver" token="33554445" />
+      <entry key="crc640d7c6d57b8a5f296/Adapter_Api18BleScanCallback" java-name="crc640d7c6d57b8a5f296/Adapter_Api18BleScanCallback" managed-type-name="Plugin.BLE.Android.Adapter/Api18BleScanCallback" token="33554513" />
+      <entry key="crc640d7c6d57b8a5f296/Adapter_Api21BleScanCallback" java-name="crc640d7c6d57b8a5f296/Adapter_Api21BleScanCallback" managed-type-name="Plugin.BLE.Android.Adapter/Api21BleScanCallback" token="33554514" />
+      <entry key="crc640d7c6d57b8a5f296/GattCallback" java-name="crc640d7c6d57b8a5f296/GattCallback" managed-type-name="Plugin.BLE.Android.GattCallback" token="33554451" />
+    </types-scratch>
+  </module>
+</api>

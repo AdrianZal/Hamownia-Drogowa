@@ -1,0 +1,7 @@
+<api type="release" assembly-name="SkiaSharp.Views.Maui.Core" mvid="bd95b03b69e5446380c77f5958d01efa">
+  <module assembly-name="SkiaSharp.Views.Maui.Core" mvid="bd95b03b69e5446380c77f5958d01efa" mvid-bytes="O7CVveVpY0SAx39ZWNAe+g==">
+    <types-scratch>
+      <entry key="crc64eaf685e082aef0e5/SKGLViewHandler_MauiSKGLTextureView" java-name="crc64eaf685e082aef0e5/SKGLViewHandler_MauiSKGLTextureView" managed-type-name="SkiaSharp.Views.Maui.Handlers.SKGLViewHandler/MauiSKGLTextureView" token="33554453" />
+    </types-scratch>
+  </module>
+</api>

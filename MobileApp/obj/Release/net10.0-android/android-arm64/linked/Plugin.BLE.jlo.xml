@@ -1,0 +1,64 @@
+<api>
+  <jcw-types>
+    <type name="BluetoothStatusBroadcastReceiver" package="crc64087678da79fdfe22" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="android.content.BroadcastReceiver" partial_assembly_qualified_name="Plugin.BLE.BroadcastReceivers.BluetoothStatusBroadcastReceiver, Plugin.BLE">
+      <constructors>
+        <constructor name="BluetoothStatusBroadcastReceiver" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+      </constructors>
+      <methods>
+        <method name="onReceive" method="n_onReceive:(Landroid/content/Context;Landroid/content/Intent;)V:GetOnReceive_Landroid_content_Context_Landroid_content_Intent_Handler" jni_signature="(Landroid/content/Context;Landroid/content/Intent;)V" params="android.content.Context p0, android.content.Intent p1" retval="void" super_call="p0, p1" activate_call="p0, p1" />
+      </methods>
+    </type>
+    <type name="BondStatusBroadcastReceiver" package="crc64087678da79fdfe22" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="android.content.BroadcastReceiver" partial_assembly_qualified_name="Plugin.BLE.BroadcastReceivers.BondStatusBroadcastReceiver, Plugin.BLE">
+      <constructors>
+        <constructor name="BondStatusBroadcastReceiver" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+      </constructors>
+      <methods>
+        <method name="onReceive" method="n_onReceive:(Landroid/content/Context;Landroid/content/Intent;)V:GetOnReceive_Landroid_content_Context_Landroid_content_Intent_Handler" jni_signature="(Landroid/content/Context;Landroid/content/Intent;)V" params="android.content.Context p0, android.content.Intent p1" retval="void" super_call="p0, p1" activate_call="p0, p1" />
+      </methods>
+    </type>
+    <type name="Adapter_Api18BleScanCallback" package="crc640d7c6d57b8a5f296" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="java.lang.Object" partial_assembly_qualified_name="Plugin.BLE.Android.Adapter+Api18BleScanCallback, Plugin.BLE">
+      <implemented_interfaces>
+        <interface name="android.bluetooth.BluetoothAdapter.LeScanCallback" />
+      </implemented_interfaces>
+      <constructors>
+        <constructor name="Adapter_Api18BleScanCallback" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+      </constructors>
+      <methods>
+        <method name="onLeScan" method="n_onLeScan:(Landroid/bluetooth/BluetoothDevice;I[B)V:GetOnLeScan_Landroid_bluetooth_BluetoothDevice_IarrayBHandler:Android.Bluetooth.BluetoothAdapter+ILeScanCallbackInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" jni_signature="(Landroid/bluetooth/BluetoothDevice;I[B)V" params="android.bluetooth.BluetoothDevice p0, int p1, byte[] p2" retval="void" super_call="p0, p1, p2" activate_call="p0, p1, p2" />
+      </methods>
+    </type>
+    <type name="Adapter_Api21BleScanCallback" package="crc640d7c6d57b8a5f296" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="android.bluetooth.le.ScanCallback" partial_assembly_qualified_name="Plugin.BLE.Android.Adapter+Api21BleScanCallback, Plugin.BLE">
+      <constructors>
+        <constructor name="Adapter_Api21BleScanCallback" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+      </constructors>
+      <methods>
+        <method name="onScanFailed" method="n_onScanFailed:(I)V:GetOnScanFailed_IHandler" jni_signature="(I)V" params="int p0" retval="void" super_call="p0" activate_call="p0" />
+        <method name="onScanResult" method="n_onScanResult:(ILandroid/bluetooth/le/ScanResult;)V:GetOnScanResult_ILandroid_bluetooth_le_ScanResult_Handler" jni_signature="(ILandroid/bluetooth/le/ScanResult;)V" params="int p0, android.bluetooth.le.ScanResult p1" retval="void" super_call="p0, p1" activate_call="p0, p1" />
+      </methods>
+    </type>
+    <type name="GattCallback" package="crc640d7c6d57b8a5f296" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="android.bluetooth.BluetoothGattCallback" partial_assembly_qualified_name="Plugin.BLE.Android.GattCallback, Plugin.BLE">
+      <constructors>
+        <constructor name="GattCallback" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+      </constructors>
+      <methods>
+        <method name="onConnectionStateChange" method="n_onConnectionStateChange:(Landroid/bluetooth/BluetoothGatt;II)V:GetOnConnectionStateChange_Landroid_bluetooth_BluetoothGatt_IIHandler" jni_signature="(Landroid/bluetooth/BluetoothGatt;II)V" params="android.bluetooth.BluetoothGatt p0, int p1, int p2" retval="void" super_call="p0, p1, p2" activate_call="p0, p1, p2" />
+        <method name="onServicesDiscovered" method="n_onServicesDiscovered:(Landroid/bluetooth/BluetoothGatt;I)V:GetOnServicesDiscovered_Landroid_bluetooth_BluetoothGatt_IHandler" jni_signature="(Landroid/bluetooth/BluetoothGatt;I)V" params="android.bluetooth.BluetoothGatt p0, int p1" retval="void" super_call="p0, p1" activate_call="p0, p1" />
+        <method name="onCharacteristicRead" method="n_onCharacteristicRead:(Landroid/bluetooth/BluetoothGatt;Landroid/bluetooth/BluetoothGattCharacteristic;I)V:GetOnCharacteristicRead_Landroid_bluetooth_BluetoothGatt_Landroid_bluetooth_BluetoothGattCharacteristic_IHandler" jni_signature="(Landroid/bluetooth/BluetoothGatt;Landroid/bluetooth/BluetoothGattCharacteristic;I)V" params="android.bluetooth.BluetoothGatt p0, android.bluetooth.BluetoothGattCharacteristic p1, int p2" retval="void" super_call="p0, p1, p2" activate_call="p0, p1, p2" />
+        <method name="onCharacteristicChanged" method="n_onCharacteristicChanged:(Landroid/bluetooth/BluetoothGatt;Landroid/bluetooth/BluetoothGattCharacteristic;)V:GetOnCharacteristicChanged_Landroid_bluetooth_BluetoothGatt_Landroid_bluetooth_BluetoothGattCharacteristic_Handler" jni_signature="(Landroid/bluetooth/BluetoothGatt;Landroid/bluetooth/BluetoothGattCharacteristic;)V" params="android.bluetooth.BluetoothGatt p0, android.bluetooth.BluetoothGattCharacteristic p1" retval="void" super_call="p0, p1" activate_call="p0, p1" />
+        <method name="onCharacteristicWrite" method="n_onCharacteristicWrite:(Landroid/bluetooth/BluetoothGatt;Landroid/bluetooth/BluetoothGattCharacteristic;I)V:GetOnCharacteristicWrite_Landroid_bluetooth_BluetoothGatt_Landroid_bluetooth_BluetoothGattCharacteristic_IHandler" jni_signature="(Landroid/bluetooth/BluetoothGatt;Landroid/bluetooth/BluetoothGattCharacteristic;I)V" params="android.bluetooth.BluetoothGatt p0, android.bluetooth.BluetoothGattCharacteristic p1, int p2" retval="void" super_call="p0, p1, p2" activate_call="p0, p1, p2" />
+        <method name="onReliableWriteCompleted" method="n_onReliableWriteCompleted:(Landroid/bluetooth/BluetoothGatt;I)V:GetOnReliableWriteCompleted_Landroid_bluetooth_BluetoothGatt_IHandler" jni_signature="(Landroid/bluetooth/BluetoothGatt;I)V" params="android.bluetooth.BluetoothGatt p0, int p1" retval="void" super_call="p0, p1" activate_call="p0, p1" />
+        <method name="onMtuChanged" method="n_onMtuChanged:(Landroid/bluetooth/BluetoothGatt;II)V:GetOnMtuChanged_Landroid_bluetooth_BluetoothGatt_IIHandler" jni_signature="(Landroid/bluetooth/BluetoothGatt;II)V" params="android.bluetooth.BluetoothGatt p0, int p1, int p2" retval="void" super_call="p0, p1, p2" activate_call="p0, p1, p2" />
+        <method name="onReadRemoteRssi" method="n_onReadRemoteRssi:(Landroid/bluetooth/BluetoothGatt;II)V:GetOnReadRemoteRssi_Landroid_bluetooth_BluetoothGatt_IIHandler" jni_signature="(Landroid/bluetooth/BluetoothGatt;II)V" params="android.bluetooth.BluetoothGatt p0, int p1, int p2" retval="void" super_call="p0, p1, p2" activate_call="p0, p1, p2" />
+        <method name="onDescriptorWrite" method="n_onDescriptorWrite:(Landroid/bluetooth/BluetoothGatt;Landroid/bluetooth/BluetoothGattDescriptor;I)V:GetOnDescriptorWrite_Landroid_bluetooth_BluetoothGatt_Landroid_bluetooth_BluetoothGattDescriptor_IHandler" jni_signature="(Landroid/bluetooth/BluetoothGatt;Landroid/bluetooth/BluetoothGattDescriptor;I)V" params="android.bluetooth.BluetoothGatt p0, android.bluetooth.BluetoothGattDescriptor p1, int p2" retval="void" super_call="p0, p1, p2" activate_call="p0, p1, p2" />
+        <method name="onDescriptorRead" method="n_onDescriptorRead:(Landroid/bluetooth/BluetoothGatt;Landroid/bluetooth/BluetoothGattDescriptor;I)V:GetOnDescriptorRead_Landroid_bluetooth_BluetoothGatt_Landroid_bluetooth_BluetoothGattDescriptor_IHandler" jni_signature="(Landroid/bluetooth/BluetoothGatt;Landroid/bluetooth/BluetoothGattDescriptor;I)V" params="android.bluetooth.BluetoothGatt p0, android.bluetooth.BluetoothGattDescriptor p1, int p2" retval="void" super_call="p0, p1, p2" activate_call="p0, p1, p2" />
+      </methods>
+    </type>
+  </jcw-types>
+  <acw-types partial-assembly-name="Plugin.BLE" module-name="Plugin.BLE.dll">
+    <type assembly-qualified-name="Plugin.BLE.BroadcastReceivers.BluetoothStatusBroadcastReceiver, Plugin.BLE, Version=3.2.1.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="plugin.ble.broadcastreceivers.BluetoothStatusBroadcastReceiver" java-key="crc64087678da79fdfe22.BluetoothStatusBroadcastReceiver" managed-key="Plugin.BLE.BroadcastReceivers.BluetoothStatusBroadcastReceiver" partial-assembly-qualified-name="Plugin.BLE.BroadcastReceivers.BluetoothStatusBroadcastReceiver, Plugin.BLE" />
+    <type assembly-qualified-name="Plugin.BLE.BroadcastReceivers.BondStatusBroadcastReceiver, Plugin.BLE, Version=3.2.1.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="plugin.ble.broadcastreceivers.BondStatusBroadcastReceiver" java-key="crc64087678da79fdfe22.BondStatusBroadcastReceiver" managed-key="Plugin.BLE.BroadcastReceivers.BondStatusBroadcastReceiver" partial-assembly-qualified-name="Plugin.BLE.BroadcastReceivers.BondStatusBroadcastReceiver, Plugin.BLE" />
+    <type assembly-qualified-name="Plugin.BLE.Android.Adapter+Api18BleScanCallback, Plugin.BLE, Version=3.2.1.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="plugin.ble.android.Adapter_Api18BleScanCallback" java-key="crc640d7c6d57b8a5f296.Adapter_Api18BleScanCallback" managed-key="Plugin.BLE.Android.Adapter.Api18BleScanCallback" partial-assembly-qualified-name="Plugin.BLE.Android.Adapter+Api18BleScanCallback, Plugin.BLE" />
+    <type assembly-qualified-name="Plugin.BLE.Android.Adapter+Api21BleScanCallback, Plugin.BLE, Version=3.2.1.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="plugin.ble.android.Adapter_Api21BleScanCallback" java-key="crc640d7c6d57b8a5f296.Adapter_Api21BleScanCallback" managed-key="Plugin.BLE.Android.Adapter.Api21BleScanCallback" partial-assembly-qualified-name="Plugin.BLE.Android.Adapter+Api21BleScanCallback, Plugin.BLE" />
+    <type assembly-qualified-name="Plugin.BLE.Android.GattCallback, Plugin.BLE, Version=3.2.1.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="plugin.ble.android.GattCallback" java-key="crc640d7c6d57b8a5f296.GattCallback" managed-key="Plugin.BLE.Android.GattCallback" partial-assembly-qualified-name="Plugin.BLE.Android.GattCallback, Plugin.BLE" />
+  </acw-types>
+</api>

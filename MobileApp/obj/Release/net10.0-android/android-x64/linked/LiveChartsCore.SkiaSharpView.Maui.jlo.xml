@@ -1,0 +1,27 @@
+<api>
+  <jcw-types>
+    <type name="NativeFrameTicker_VSyncTicker" package="crc6432ed94bc8b0b3e95" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="java.lang.Object" partial_assembly_qualified_name="LiveChartsCore.Native.NativeFrameTicker+VSyncTicker, LiveChartsCore.SkiaSharpView.Maui">
+      <implemented_interfaces>
+        <interface name="android.view.Choreographer.FrameCallback" />
+      </implemented_interfaces>
+      <constructors>
+        <constructor name="NativeFrameTicker_VSyncTicker" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+      </constructors>
+      <methods>
+        <method name="doFrame" method="n_doFrame:(J)V:GetDoFrame_JHandler:Android.Views.Choreographer+IFrameCallbackInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" jni_signature="(J)V" params="long p0" retval="void" super_call="p0" activate_call="p0" />
+      </methods>
+    </type>
+    <type name="PointerController_CustomScaleListener" package="crc6432ed94bc8b0b3e95" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="android.view.ScaleGestureDetector.SimpleOnScaleGestureListener" partial_assembly_qualified_name="LiveChartsCore.Native.PointerController+CustomScaleListener, LiveChartsCore.SkiaSharpView.Maui">
+      <constructors>
+        <constructor name="PointerController_CustomScaleListener" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+      </constructors>
+      <methods>
+        <method name="onScale" method="n_onScale:(Landroid/view/ScaleGestureDetector;)Z:GetOnScale_Landroid_view_ScaleGestureDetector_Handler" jni_signature="(Landroid/view/ScaleGestureDetector;)Z" params="android.view.ScaleGestureDetector p0" retval="boolean" super_call="p0" activate_call="p0" />
+      </methods>
+    </type>
+  </jcw-types>
+  <acw-types partial-assembly-name="LiveChartsCore.SkiaSharpView.Maui" module-name="LiveChartsCore.SkiaSharpView.Maui.dll">
+    <type assembly-qualified-name="LiveChartsCore.Native.NativeFrameTicker+VSyncTicker, LiveChartsCore.SkiaSharpView.Maui, Version=2.0.5.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="livechartscore.native.NativeFrameTicker_VSyncTicker" java-key="crc6432ed94bc8b0b3e95.NativeFrameTicker_VSyncTicker" managed-key="LiveChartsCore.Native.NativeFrameTicker.VSyncTicker" partial-assembly-qualified-name="LiveChartsCore.Native.NativeFrameTicker+VSyncTicker, LiveChartsCore.SkiaSharpView.Maui" />
+    <type assembly-qualified-name="LiveChartsCore.Native.PointerController+CustomScaleListener, LiveChartsCore.SkiaSharpView.Maui, Version=2.0.5.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="livechartscore.native.PointerController_CustomScaleListener" java-key="crc6432ed94bc8b0b3e95.PointerController_CustomScaleListener" managed-key="LiveChartsCore.Native.PointerController.CustomScaleListener" partial-assembly-qualified-name="LiveChartsCore.Native.PointerController+CustomScaleListener, LiveChartsCore.SkiaSharpView.Maui" />
+  </acw-types>
+</api>

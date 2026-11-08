@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Maui;assembly=LiveChartsCore.SkiaSharpView.Maui"
+             x:Class="MobileApp.MainPage">
+
+    <Grid RowDefinitions="Auto, *">
+        <!-- Panel sterowania -->
+        <VerticalStackLayout Grid.Row="0" Padding="20" Spacing="10">
+
+            <Button x:Name="BtnReset"
+                Text="Reset samples"
+                Clicked="OnResetButtonClicked"
+                BackgroundColor="{StaticResource Primary}"
+                TextColor="White"
+                CornerRadius="8" />
+            
+            <Grid ColumnDefinitions="*,*">
+                <!-- Połączony przycisk Connect / Disconnect -->
+                <Button Grid.Column="0" 
+                    Margin="0,0,5,0" 
+                    x:Name="BtnConnect" 
+                    Text="Connect to M5Stick" 
+                    Clicked="OnConnectToggleClicked" />
+
+                <Button Grid.Column="1" 
+                    Margin="5,0,0,0" 
+                    x:Name="BtnSave" 
+                    Text="Save to CSV" 
+                    Clicked="OnSaveClicked" 
+                    IsEnabled="False" />
+            </Grid>
+
+            <Label x:Name="LblStatus" Text="Status: Disconnected" FontSize="16" />
+            <Label x:Name="LblCounter" Text="Collected samples: 0" FontSize="16" TextColor="Green" />
+        </VerticalStackLayout>
+
+        <!-- Wykres -->
+        <lvc:CartesianChart Grid.Row="1"
+                        Margin="10"
+                        Series="{Binding ImuSeries}" 
+                        ZoomMode="Both"
+                        SyncContext="{Binding SyncItem}"
+                        AnimationsSpeed="00:00:00" />
+    </Grid>
+</ContentPage>
